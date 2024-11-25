@@ -1,0 +1,6 @@
+@APIAMBIPARDEV_HostAddress = http://localhost:5012
+
+GET {{APIAMBIPARDEV_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
