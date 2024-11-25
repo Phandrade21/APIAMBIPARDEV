@@ -1,4 +1,6 @@
-﻿namespace APIAMBIPARDEV.Modelo
+﻿using System.Text.Json.Serialization;
+
+namespace APIAMBIPARDEV.Modelo
 {
     public class Cliente
     {
@@ -8,7 +10,10 @@
         public string Email { get; set; }
         public string Telefone { get; set; }
         public string Endereco { get; set; }
+        [JsonIgnore]
+        public virtual IEnumerable<Ocorrencia>? OcorrenciasAbertas { get; set; }
+        [JsonIgnore]
+        public virtual IEnumerable<Ocorrencia>? OcorrenciasResponsaveis { get; set; }
 
-      
     }
 }

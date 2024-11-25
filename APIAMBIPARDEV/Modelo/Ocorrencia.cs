@@ -11,5 +11,7 @@
         public int ResponsavelOcorrenciaId { get; set; }
      
         public string Conclusao { get; set; }
+        public virtual Cliente? ResponsavelAbertura { get; set; }
+        public virtual Cliente? ResponsavelOcorrencia { get; set; }
     }
 }
